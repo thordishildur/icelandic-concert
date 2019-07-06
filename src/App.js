@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
+import ConcertItem from './ConcertItem'
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    data: [],
+  }
+
+  // Code is invoked after the component is mounted/inserted into the DOM tree.
+  componentDidMount() {
+    const url =
+      'https://apis.is/concerts'
+
+    fetch(url)
+      .then(result => result.json())
+      .then(result => {
+        this.setState({
+          data: result.results,
+        })
+      })
+  }
+  
+  render() {
+    const { data } = this.state
+
+    const result = data.map((entry, index) => {
+      return <ConcertItem key={index} concert={entry}></ConcertItem>
+    }) 
+
+    return <ul>{result}</ul>
+  }
 }
 
 export default App;
