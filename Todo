@@ -1,9 +1,5 @@
-- Hover effect á myndir
-    - zoom
-    - texti á mynd: event nafnið
-- íta á mynd
-    - downtrop með öllum upplýsingum
+- Ýta á mynd
+    - fleiri upplysingar á hover með click
 - Raða myndir betur
-- Birta myndir í röð eftir dagsetningu
-- Birta hverja mynd bara 1x 
-- velja tímabil uppi
+    - losna við hvíta shittið
+-velja tímabil

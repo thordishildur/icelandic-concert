@@ -1,0 +1,24 @@
+
+.concertItem:hover .eventDescription { 
+    display: block;
+    
+}
+
+.concertItem:hover img { 
+    opacity: 0.4;
+}
+
+.concertItem {
+    display: inline-flex;
+    position: relative;
+}
+
+
+.eventDescription {
+    text-align: center;
+    color: black !important;
+    font-weight: bold;
+    position: absolute;
+    display: none;
+    width: 100%;
+}
