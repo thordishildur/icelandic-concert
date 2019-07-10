@@ -17,11 +17,11 @@ class ConcertItem extends Component {
     render () {
         return (
         <li className="concertItem">
-            <img src={this.props.concert.imageSource} alt=""/>
-            <div class="eventDescription">
-                <h4>{this.props.concert.eventDateName}</h4>
-                <p>{this.prettyDate(this.props.concert.dateOfShow)}</p>
-            </div>
+                <img src={this.props.concert.imageSource} alt=""/>
+                <div class="eventDescription">
+                    <h4>{this.props.concert.eventDateName}</h4>
+                    <p>{this.prettyDate(this.props.concert.dateOfShow)}</p>
+                </div>
         </li>
         )
     }

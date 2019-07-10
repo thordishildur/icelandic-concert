@@ -29,7 +29,12 @@ class App extends Component {
       return <ConcertItem key={index} concert={entry}></ConcertItem>
     }) 
 
-    return <ul>{result}</ul>
+    return (
+      <div className="parentDiv">
+        <ul>{result}</ul>
+      </div>
+    )
+
   }
 }
 

@@ -3,6 +3,9 @@
     display: block;
     
 }
+.parentDiv {
+    text-align: center;
+}
 
 .concertItem:hover img { 
     opacity: 0.4;
