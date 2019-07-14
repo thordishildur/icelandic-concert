@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/icelandic-concert/static/css/main.b6c08fb1.chunk.css",
+    "main.js": "/icelandic-concert/static/js/main.24c502d9.chunk.js",
+    "main.js.map": "/icelandic-concert/static/js/main.24c502d9.chunk.js.map",
+    "runtime~main.js": "/icelandic-concert/static/js/runtime~main.cb28d0e7.js",
+    "runtime~main.js.map": "/icelandic-concert/static/js/runtime~main.cb28d0e7.js.map",
+    "static/css/2.461d0f21.chunk.css": "/icelandic-concert/static/css/2.461d0f21.chunk.css",
+    "static/js/2.f9bf2215.chunk.js": "/icelandic-concert/static/js/2.f9bf2215.chunk.js",
+    "static/js/2.f9bf2215.chunk.js.map": "/icelandic-concert/static/js/2.f9bf2215.chunk.js.map",
+    "index.html": "/icelandic-concert/index.html",
+    "precache-manifest.c70aafac63885059cf52f7721d8375a6.js": "/icelandic-concert/precache-manifest.c70aafac63885059cf52f7721d8375a6.js",
+    "service-worker.js": "/icelandic-concert/service-worker.js",
+    "static/css/2.461d0f21.chunk.css.map": "/icelandic-concert/static/css/2.461d0f21.chunk.css.map",
+    "static/css/main.b6c08fb1.chunk.css.map": "/icelandic-concert/static/css/main.b6c08fb1.chunk.css.map"
+  }
+}
