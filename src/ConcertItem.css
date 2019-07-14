@@ -8,7 +8,7 @@
 }
 
 .concertItem:hover img { 
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .concertItem {
@@ -24,4 +24,9 @@
     position: absolute;
     display: none;
     width: 100%;
+    font-family: Georgia, serif !important; 
+}
+
+h5 {
+    font-family: Georgia, serif !important; 
 }

@@ -2,6 +2,9 @@ import React, {Component} from 'react'
 import './ConcertItem.css';
 
 class ConcertItem extends Component {
+    state = {
+        selected: false
+    }
 
     prettyDate (date) {
         const dateObject =  Date.parse(date)
@@ -14,13 +17,23 @@ class ConcertItem extends Component {
         }).format(dateObject)
     }
 
+    onClick() {
+        this.setState({selected: true})
+    }
+
     render () {
+        let text = null;
+        if(this.state.selected) {
+            text = (<p>{this.props.concert.eventHallName}</p>)
+        } else {
+            text = (<p>{this.prettyDate(this.props.concert.dateOfShow)}</p>)
+        }
         return (
         <li className="concertItem">
                 <img src={this.props.concert.imageSource} alt=""/>
-                <div class="eventDescription">
-                    <h4>{this.props.concert.eventDateName}</h4>
-                    <p>{this.prettyDate(this.props.concert.dateOfShow)}</p>
+                <div className="eventDescription" onClick={this.onClick.bind(this)} >
+                    <h5>{this.props.concert.eventDateName}</h5>
+                    <p>{text}</p>
                 </div>
         </li>
         )
