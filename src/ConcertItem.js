@@ -17,8 +17,8 @@ class ConcertItem extends Component {
         }).format(dateObject)
     }
 
-    onClick() {
-        this.setState({selected: true})
+    onClick() {   
+        this.setState({selected: !this.state.selected})
     }
 
     render () {
@@ -29,9 +29,9 @@ class ConcertItem extends Component {
             text = (<p>{this.prettyDate(this.props.concert.dateOfShow)}</p>)
         }
         return (
-        <li className="concertItem">
+        <li className="concertItem" onClick={this.onClick.bind(this)} >
                 <img src={this.props.concert.imageSource} alt=""/>
-                <div className="eventDescription" onClick={this.onClick.bind(this)} >
+                <div className="eventDescription">
                     <h5>{this.props.concert.eventDateName}</h5>
                     <p>{text}</p>
                 </div>
